@@ -27,12 +27,12 @@ const Nav = () => {
   const MobileNav = () => (
     <div className="w-full">
       <div className="flex justify-between items-center p-4 bg-white">
-        <div className="flex space-x-4">
+        <div className="flex space-x-2">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>
-                  <HiOutlineMenuAlt4 className="text-3xl" />
+                  <HiOutlineMenuAlt4 className="text-2xl" />
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="space-y-8 py-10 px-8 m-2 rounded-[32px]">
@@ -62,9 +62,15 @@ const Nav = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <Image src="/logo.svg" alt="logo" width={100} height={50} />
+          <Image
+            src="/logo.svg"
+            alt="logo"
+            width={80}
+            height={40}
+            className="sm:!w-[100px] sm:!h-[50px]"
+          />
         </div>
-        <button className="px-4 py-2 bg-customBlack text-white rounded-full text-sm">
+        <button className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm">
           Отправить заявку
         </button>
       </div>
@@ -107,7 +113,7 @@ const Nav = () => {
             <BsTelegram className="text-blue-500 text-2xl" />
             <Image src="/wApp.svg" alt="WhatsApp" width={24} height={24} />
           </div>
-          <button className="px-4 py-2 bg-customBlack text-white rounded-full text-sm">
+          <button className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm">
             Отправить заявку
           </button>
         </div>
@@ -167,7 +173,7 @@ const Nav = () => {
         </button>
         <Link
           href="/#contact_form"
-          className="px-4 py-2 bg-customBlack text-white rounded-full hover:bg-slate-600 focus:bg-customYellow focus:text-bl"
+          className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full hover:bg-slate-600 focus:bg-customYellow focus:text-bl"
         >
           Отправить заявку
         </Link>
