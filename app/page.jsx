@@ -13,7 +13,7 @@ import Brands from "./brands";
 export default function Home() {
   return (
     <main className="">
-      <Nav />
+      {/* <Nav /> */}
       <div className="p-4 bg-bgGrey sm:py-16 rounded-b-xl sm:rounded-b-2xl md:rounded-b-3xl lg:rounded-b-[100px] mb-12">
         <Hero />
         <Map />
