@@ -29,7 +29,7 @@ export default function Home() {
           backgroundImage: `linear-gradient(to top, rgba(42, 78, 164, 0.5) 0%, rgba(42, 78, 164, 0) 100%)`,
         }}
       >
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   );

@@ -17,7 +17,7 @@ const Footer = ({ className = "" }) => {
           © 2024. Все права защищены
         </div>
         <div className="self-stretch relative space-y-3 leading-[120%]">
-          <p className="m-0">OOO "Линкор"</p>
+          {/* <p className="m-0">OOO "Линкор"</p> */}
           <p className="m-0">ИНН: 1655469490</p>
           <p className="m-0">ЕГРН:1211600092329</p>
         </div>
