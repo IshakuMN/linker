@@ -36,16 +36,21 @@ const Nav = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="space-y-8 py-10 px-8 m-2 rounded-[32px]">
-                    <button className="block w-full text-left">
+                    <Link href={"/#map"} className="block w-full text-left">
                       О компании
-                    </button>
-                    <button className="block w-full text-left text-blue-600">
+                    </Link>
+                    <Link
+                      href={"/#cases"}
+                      className="block w-full text-left text-blue-600"
+                    >
                       Наши кейсы
-                    </button>
-                    <button className="block w-full text-left">
+                    </Link>
+                    <Link href={"/#steps"} className="block w-full text-left">
                       Сотрудничество
-                    </button>
-                    <button className="block w-full text-left">FAQ</button>
+                    </Link>
+                    <Link href={"/#faq"} className="block w-full text-left">
+                      FAQ
+                    </Link>
                     <hr className="border w-full" />
                     <div className="text-gray-600">Тел: (495) 555-55-55</div>
                     <div className=" flex space-x-4">
@@ -89,16 +94,21 @@ const Nav = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="space-y-8 py-10 px-8 m-2 rounded-[32px]">
-                    <button className="block w-full text-left">
+                    <Link href={"/#map"} className="block w-full text-left">
                       О компании
-                    </button>
-                    <button className="block w-full text-left text-blue-600">
+                    </Link>
+                    <Link
+                      href={"/#cases"}
+                      className="block w-full text-left text-blue-600"
+                    >
                       Наши кейсы
-                    </button>
-                    <button className="block w-full text-left">
+                    </Link>
+                    <Link href={"/#steps"} className="block w-full text-left">
                       Сотрудничество
-                    </button>
-                    <button className="block w-full text-left">FAQ</button>
+                    </Link>
+                    <Link href={"/#faq"} className="block w-full text-left">
+                      FAQ
+                    </Link>
                     <hr className="border w-full" />
                     <div className="text-gray-600">Тел: (495) 555-55-55</div>
                   </div>

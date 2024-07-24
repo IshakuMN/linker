@@ -57,7 +57,7 @@ const FAQ = () => {
               <AccordionTrigger className="text-start text-stone-800 hover:text-bgBlue">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="rounded-3xl text-sm bg-stone-100 px-12 py-4 mb-2 text-gray-600">
+              <AccordionContent className="rounded-3xl text-sm bg-stone-100  px-8 lg:px-12 py-4 mb-2 text-gray-600">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

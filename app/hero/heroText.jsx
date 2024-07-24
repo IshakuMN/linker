@@ -21,13 +21,13 @@ const HeroText = () => {
         {" "}
         <Link
           href="/#cases"
-          className="px-6 py-3 w-full sm:w-fit rounded-full flex items-center text-center bg-white hover:bg-gray-100 focus:bg-customBlack focus:text-white"
+          className="px-6 py-3 w-full sm:w-fit rounded-full flex items-center justify-center text-center bg-white hover:bg-gray-100 focus:bg-customBlack focus:text-white"
         >
           Смотреть кейсы
         </Link>
         <Link
           href="/#contact_form"
-          className="px-6 py-3 w-full sm:w-fit rounded-full bg-customYellow hover:bg-yellow-400 focus:bg-customBlack focus:text-white"
+          className="px-6 py-3 w-full sm:w-fit flex justify-center text-center items-center rounded-full bg-customYellow hover:bg-yellow-400 focus:bg-customBlack focus:text-white"
         >
           Отправить заявку
         </Link>
