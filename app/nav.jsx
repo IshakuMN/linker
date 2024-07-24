@@ -7,6 +7,17 @@ import { useMediaQuery } from "react-responsive";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Link from "next/link";
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -17,37 +28,46 @@ const Nav = () => {
     <div className="w-full">
       <div className="flex justify-between items-center p-4 bg-white">
         <div className="flex space-x-4">
-          <button className="text-gray-600" onClick={toggleMenu}>
-            <div
-              className={`${
-                isMenuOpen ? "border p-2 rounded-full bg-stone-100" : ""
-              }`}
-            >
-              <HiOutlineMenuAlt4 className="text-2xl" />
-            </div>
-          </button>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>
+                  <HiOutlineMenuAlt4 className="text-3xl" />
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="space-y-8 py-10 px-8 m-2 rounded-[32px]">
+                    <button className="block w-full text-left">
+                      О компании
+                    </button>
+                    <button className="block w-full text-left text-blue-600">
+                      Наши кейсы
+                    </button>
+                    <button className="block w-full text-left">
+                      Сотрудничество
+                    </button>
+                    <button className="block w-full text-left">FAQ</button>
+                    <hr className="border w-full" />
+                    <div className="text-gray-600">Тел: (495) 555-55-55</div>
+                    <div className=" flex space-x-4">
+                      <BsTelegram className="text-blue-500 text-2xl" />
+                      <Image
+                        src="/wApp.svg"
+                        alt="WhatsApp"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
           <Image src="/logo.svg" alt="logo" width={100} height={50} />
         </div>
         <button className="px-4 py-2 bg-customBlack text-white rounded-full text-sm">
           Отправить заявку
         </button>
       </div>
-      {isMenuOpen && (
-        <div className="bg-gray-100 space-y-8 py-10 px-8 m-2 rounded-[32px]">
-          <button className="block w-full text-left">О компании</button>
-          <button className="block w-full text-left text-blue-600">
-            Наши кейсы
-          </button>
-          <button className="block w-full text-left">Сотрудничество</button>
-          <button className="block w-full text-left">FAQ</button>
-          <hr className="border w-full" />
-          <div className="text-gray-600">Тел: (495) 555-55-55</div>
-          <div className=" flex space-x-4">
-            <BsTelegram className="text-blue-500 text-2xl" />
-            <Image src="/wApp.svg" alt="WhatsApp" width={24} height={24} />
-          </div>
-        </div>
-      )}
     </div>
   );
 
@@ -55,15 +75,31 @@ const Nav = () => {
     <div className="w-full">
       <div className="flex justify-between items-center p-4 bg-white">
         <div className="flex space-x-4">
-          <button className="text-gray-600" onClick={toggleMenu}>
-            <div
-              className={`${
-                isMenuOpen ? "border p-2 rounded-full bg-stone-100" : ""
-              }`}
-            >
-              <HiOutlineMenuAlt4 className="text-2xl" />
-            </div>
-          </button>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>
+                  <HiOutlineMenuAlt4 className="text-3xl" />
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="space-y-8 py-10 px-8 m-2 rounded-[32px]">
+                    <button className="block w-full text-left">
+                      О компании
+                    </button>
+                    <button className="block w-full text-left text-blue-600">
+                      Наши кейсы
+                    </button>
+                    <button className="block w-full text-left">
+                      Сотрудничество
+                    </button>
+                    <button className="block w-full text-left">FAQ</button>
+                    <hr className="border w-full" />
+                    <div className="text-gray-600">Тел: (495) 555-55-55</div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
           <Image src="/logo.svg" alt="logo" width={100} height={50} />
         </div>
         <div className="flex space-x-4 items-center">
@@ -77,7 +113,10 @@ const Nav = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="bg-gray-100 space-y-8 py-10 px-8 m-2 rounded-[32px]">
+        <div
+          style={menuStyles}
+          className="bg-gray-100 space-y-8 py-10 px-8 m-2 rounded-[32px]"
+        >
           <button className="block w-full text-left">О компании</button>
           <button className="block w-full text-left text-blue-600">
             Наши кейсы
@@ -128,7 +167,7 @@ const Nav = () => {
         </button>
         <Link
           href="/#contact_form"
-          className="px-4 py-2 bg-customBlack text-white rounded-full hover:bg-slate-600 focus:bg-customYellow focus:text-black"
+          className="px-4 py-2 bg-customBlack text-white rounded-full hover:bg-slate-600 focus:bg-customYellow focus:text-bl"
         >
           Отправить заявку
         </Link>
