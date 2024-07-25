@@ -131,11 +131,6 @@ const Cases = () => {
                         >
                           Открыть кейс <HiArrowLongRight className="f" />
                         </button>
-                        <div className="text-3xl flex text-white ">
-                          <span className="text-blue-700">.</span>
-                          <span>.</span>
-                          <span>.</span>
-                        </div>
                       </div>
                     </>
                   ) : (
@@ -150,6 +145,11 @@ const Cases = () => {
             </div>
           </div>
         )}
+      </div>
+      <div className="text-3xl flex text-white w-full text-center justify-center items-center sm:hidden border">
+        <span className="text-blue-700">.</span>
+        <span>.</span>
+        <span>.</span>
       </div>
     </section>
   );

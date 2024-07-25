@@ -75,9 +75,12 @@ const Nav = () => {
             className="sm:!w-[100px] sm:!h-[50px]"
           />
         </div>
-        <button className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm">
+        <Link
+          href={"/#contact_form"}
+          className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm"
+        >
           Отправить заявку
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -123,9 +126,12 @@ const Nav = () => {
             <BsTelegram className="text-blue-500 text-2xl" />
             <Image src="/wApp.svg" alt="WhatsApp" width={24} height={24} />
           </div>
-          <button className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm">
+          <Link
+            href={"/#contact_form"}
+            className="px-3 py-1 sm:px-4 sm:py-2 bg-customBlack text-white rounded-full text-sm"
+          >
             Отправить заявку
-          </button>
+          </Link>
         </div>
       </div>
       {isMenuOpen && (

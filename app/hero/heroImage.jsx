@@ -18,7 +18,7 @@ const HeroImage = () => {
 
   return (
     <div
-      className="border bg-cover rounded-[32px] px-2 py-4 h-[205px] w-full lg:px-10 lg:py-8 lg:min-h-[842px] my-8 lg:my-0"
+      className="border bg-cover rounded-[32px] px-2 py-4 h-[405px] w-full lg:px-10 lg:py-8 lg:min-h-[842px] my-8 lg:my-0"
       style={{ backgroundImage: `url(${images[activeImage]})` }}
     >
       <div className="sm:flex space-x-2 w-full">

@@ -33,7 +33,7 @@ const HeroCards = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="rounded-2xl bg-white px-5 py-4 hover:shadow-lg hover:border hover:border-stone-300 flex flex-col justify-center items-start h-[110px] min-w-[200px] md:min-w-[250px] lg:min-w-0"
+            className="rounded-2xl bg-white px-5 py-4 border border-transparent hover:shadow-lg hover:border-stone-300 flex flex-col justify-center items-start h-[124px] lg:h-[112px] min-w-[200px] md:min-w-[250px] lg:min-w-0 transition-all duration-300"
           >
             <Image
               src={item.imageUrl}
@@ -42,7 +42,7 @@ const HeroCards = () => {
               height={26}
               className="bg-gray-100 p-2 rounded-full mb-2"
             />
-            <p className="text-sm">{item.text}</p>
+            <p className="lg:text-sm">{item.text}</p>
           </div>
         ))}
       </div>
