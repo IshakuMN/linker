@@ -26,7 +26,7 @@ const Footer = ({ className = "" }) => {
         <div className="flex flex-col items-start justify-center gap-[16px]">
           <Link
             href="/#map"
-            className="rounded-81xl py-1 px-2 hover:bg-stone-100"
+            className="rounded-81xl py-1 px-2 hover:bg-stone-100 rounded-full"
           >
             О компании
           </Link>
@@ -38,18 +38,24 @@ const Footer = ({ className = "" }) => {
           </Link>
           <Link
             href="/#steps"
-            className="rounded-81xl py-1 px-2 hover:bg-stone-100"
+            className="rounded-81xl py-1 px-2 hover:bg-stone-100 rounded-full"
           >
             Сотрудничество
           </Link>
         </div>
         <div className="flex flex-col items-start justify-end gap-[16px]">
-          <div className="rounded-81xl py-1 px-2 hover:bg-stone-100">
+          <Link
+            href={"/privacy_policy.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-81xl py-1 px-2 hover:bg-stone-100 rounded-full"
+            // onClick={() => window.open("/privacy_policy.pdf", "_blank")}
+          >
             Политика конфиденциальности
-          </div>
+          </Link>
           <Link
             href="/#faq"
-            className="rounded-81xl py-1 px-2 hover:bg-stone-100"
+            className="rounded-81xl py-1 px-2 hover:bg-stone-100 rounded-full"
           >
             FAQ
           </Link>
@@ -79,7 +85,12 @@ const Footer = ({ className = "" }) => {
               alt=""
               src="/biLogo.svg"
             />
-            <div className="relative leading-[17px]">{`Сайт разработан компанией Binorix `}</div>
+            <a
+              href={"https://binorix.com/ru/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative leading-[17px hover:underline"
+            >{`Сайт разработан компанией Binorix `}</a>
           </div>
         </div>
       </div>
